@@ -4,5 +4,25 @@ bodyClass: bg-green-50
 ---
 
 <x-layout>
-  <h1>{{page.title}}</h1>
+  <table class="w-full shadow-xl rounded">
+    <tr>
+      <td class="p-6 bg-green-900 text-white rounded-t">
+        <h2 class="mt-2 mb-3 text-2xl text-center">
+          {{ page.title }}
+        </h2>
+      </td>
+    </tr>
+    <tr>
+      <td class="p-6 bg-white rouned-b text-center">
+        <p class="mb-16 text-base text-slate-500">
+          Username Approved the Document.
+        </p>
+        <p>
+          <a href="http://document-approval.company.com/document_id">
+            View Document
+          </a>
+        </p>
+      </td>
+    </tr>
+  </table>
 </x-layout>
