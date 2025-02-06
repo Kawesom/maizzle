@@ -11,7 +11,18 @@
 
 /** @type {import('@maizzle/framework').Config} */
 export default {
+  locals: {
+    companyName: "K-Industries",
+  },
+  companyName: "K-Industries",
   build: {
+    posthtml: {
+      outlook: {tag: 'mso'},
+      // fetch: {
+      //   tags: ['get'],
+      //   attribute: 'resource'
+      // }
+    },
     content: ['emails/**/*.html'],
     static: {
       source: ['images/**/*.*'],

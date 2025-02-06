@@ -11,7 +11,7 @@ bodyClass: bg-blue-50
       }
   </style>
   </outlook>
-  
+
   <style>
     @font-face {
         font-family: 'Public Sans';
@@ -26,6 +26,7 @@ bodyClass: bg-blue-50
 
 <x-layout>
   <x-notification bgColour="bg-blue-900">
+    <fill:message>{{companyName}}</fill:message>
     <div class="text-left">
       <fetch url="https://jsonplaceholder.typicode.com/users/1">
         <each loop="user in response">
